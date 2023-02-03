@@ -5,7 +5,7 @@ import Navbar from "../routes/Navbar";
 const Header = () => {
   return (
     <div>
-      <nav class="bg-white py-2 md:py-4">
+      <nav class="bg-white py-2 md:py-4 dark:bg-gray-800">
         <div class="container px-4 mx-auto md:flex md:items-center">
           <div class="flex justify-between items-center">
             <Link to={'/'} class="font-bold text-xl text-indigo-600">
