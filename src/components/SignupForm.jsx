@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "../components/Ui/Button";
+import Button from "../Ui/Button";
 import { SignupContext } from "../context/signup-context";
-import { Input } from "./Ui/Input";
+import { Input } from "../Ui/Input";
 
 const SignupForm = () => {
   const navigate = useNavigate();

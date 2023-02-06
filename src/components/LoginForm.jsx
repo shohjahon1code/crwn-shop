@@ -1,6 +1,6 @@
-import { Input } from "./Ui/Input";
+import { Input } from "../Ui/Input";
 import React, { useContext, useState } from "react";
-import Button from "./Ui/Button";
+import Button from "../Ui/Button";
 import { useNavigate } from "react-router-dom";
 import { SignupContext } from "../context/signup-context";
 
