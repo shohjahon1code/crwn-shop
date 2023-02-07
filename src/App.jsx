@@ -8,6 +8,7 @@ import Main from "./routes/Main";
 import Login from "./routes/Login";
 import Contact from "./routes/Contact";
 import SinglePage from "./routes/SinglePage";
+import Cart from "./routes/Cart";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/products/:id" element={<SinglePage />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/items/:id" element={<SinglePage />} />
       </Routes>
       <Footer />
     </>

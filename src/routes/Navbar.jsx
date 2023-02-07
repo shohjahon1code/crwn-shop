@@ -26,8 +26,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0"
-      id="navbar-collapse"
+      className=" z-10 h-14 md:h-auto w-full md:w-auto md:flex flex-col justify-end md:flex-row md:ml-auto mt-20 md:mt-0"
     >
       <NavLink
         to={"/"}
@@ -46,15 +45,15 @@ const Navbar = () => {
         About
       </NavLink>
       <NavLink
-        to={"/products"}
+        to={"/fav"}
         className={({ isActive }) =>
           isActive ? activeClassName : classNameLink
         }
       >
-        Products
+        Favouretes
       </NavLink>
       <NavLink
-        to={"/pricing"}
+        to={"/cart"}
         className={({ isActive }) =>
           isActive ? activeClassName : classNameLink
         }
@@ -90,7 +89,7 @@ const Navbar = () => {
         <Link
           onClick={logoutHandler}
           to={"/login"}
-          className="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
+          className="p-1 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
         >
           Logout
         </Link>

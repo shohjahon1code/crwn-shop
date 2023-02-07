@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { findRating } from "../utils/findrating";
 const Product = ({ product }) => {
   return (
-    <div class="w-full max-w-sm flex flex-col justify-between bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-full mx-auto max-w-sm flex flex-col justify-between bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <img
           class="p-8 rounded-t-lg w-full h-96"
@@ -23,7 +23,7 @@ const Product = ({ product }) => {
         </span>
         <div class="flex items-center justify-between">
           <Link
-            to={`/products/${product.id}`}
+            to={`/items/${product.id}`}
             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Read more
