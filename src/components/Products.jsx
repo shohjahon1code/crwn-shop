@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useMemo, useState } from "react";
 import { LoaderContext } from "../context/loader-context";
-import Loader from "./Loader";
+import EventsLoader from "./Loader";
 import Pagination from "./Pagination";
 import Product from "./Product";
 
@@ -38,7 +38,18 @@ const Products = () => {
   }, []);
 
   if (loading) {
-    return <Loader />;
+    return (
+      <div className="flex flex-wrap">
+        <EventsLoader />
+        <EventsLoader />
+        <EventsLoader />
+        <EventsLoader />
+        <EventsLoader />
+        <EventsLoader />
+        <EventsLoader />
+        <EventsLoader />
+      </div>
+    );
   }
   return (
     <>
